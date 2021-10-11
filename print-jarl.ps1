@@ -1,5 +1,8 @@
 do {
 	If ($PSCommandPath) { echo $PSCommandPath }
-	Else { echo ((New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/RaRodRos/junk/master/print-jarl.ps1")) }
+	Else {
+		$jarl = (New-Object System.Net.WebClient).DownloadString("https://raw.githubusercontent.com/RaRodRos/junk/master/print-jarl.ps1")
+		echo $jarl
+	}
 } while ($true)
 echo "unreachable"
