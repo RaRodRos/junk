@@ -1,1 +1,1 @@
-<h1 style="color:red">Prueba 
+<h1 style="font-size:8px">Prueba 
